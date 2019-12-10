@@ -239,3 +239,78 @@ background-image: url("../img/skull-74-512.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
+
+.card{
+    background-color: rgb(63, 56, 56);
+    height: 50px;
+    width: 200%;
+}
+
+.card1{
+    background-color: rgb(63, 56, 56);
+    height: 90px;
+    width: 110%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#row1{
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+#teamVenstre{
+    margin: 10px 20px 10px 20px;
+}
+
+.card h6{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card1 h6{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+}
+
+.members{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+    color: white;
+}
+
+.center{
+    color: white;
+}
+
+.white{
+    color: white;
+}
+
+.btn{
+    color: white;
+}
+
+#testy{
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 100;
+    transition: none;
+    text-align: center;
+}

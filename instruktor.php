@@ -1,6 +1,8 @@
 <?php
 
-	include('db_connection.php');
+  include('db_connection.php');
+  include('add.php');
+  
 
 	//write query for all pizza 
 	$sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
@@ -43,7 +45,8 @@
             <div class="titleBar">
               TEAM
             </div>
-            <div class="teamImg" onclick="openNav1()"></div>
+            <a href="teams.php"><div class="teamImg"></div>
+            </a>
           </div>
           <div class="key" id="main2">
             <div class="titleBar">
@@ -54,7 +57,7 @@
         </div>
         <div class="col" id="main">
           <div class="titleBar">
-            MAP
+            INSTRUKTOR - MAP
           </div>
           <div id="mapImg" onclick="openNav()"></div>
         </div>
@@ -84,49 +87,6 @@
             </div>
           </div>
         </div>
-
-        <!--Mappen som kommer frem fra top til bund-->
-        <div id="mySidebar1" class="sidebar">
-            <p>TEAMS</p>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()"
-              >×</a
-            >
-            <div class="wideTeam">
-			<div class="container">
-					<div class="row" id="row1">
-						<?php foreach($pizzas as $pizza){ ?>
-						
-						<div class="col-6 s6 md6" id="teamVenstre">
-							<div class="card z-depth-0">
-								<div class="card-content center">
-									<h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
-								</div>
-							</div>	
-						</div>
-						
-						<?php } ?>
-					</div>
-				</div>
-			</div>
-            <div class="wideAlive">
-				<div class="container">
-					<div class="row">
-						<?php foreach($pizzas as $pizza){ ?>
-						
-						<div class="col-5 s6 md6" style="margin: 20px;">
-							<div class="card1 z-depth-0">
-								<div class="card-content center">
-									<h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
-									<div class="members">Members : <?php echo htmlspecialchars($pizza['ingredients']); ?></div>
-								</div>
-							</div>	
-						</div>
-						
-						<?php } ?>
-					</div>
-				</div>
-            </div>
-          </div>
 
            <!--Mappen som kommer frem fra bund til top-->
         	<div id="mySidebar2" class="sidebar">

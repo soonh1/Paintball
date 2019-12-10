@@ -5,7 +5,7 @@
 		$id_to_delete = mysqli_real_escape_string($conn, $_POST['id_to_delete']);
 		$sql = "DELETE FROM pizzas WHERE id = $id_to_delete";
 		if(mysqli_query($conn, $sql)){
-			header('Location: index.php');
+			header('Location: teams.php');
 		} else {
 			echo 'query error: '. mysqli_error($conn);
 		}
@@ -46,7 +46,7 @@
 
 		<div id="mySidebar3" class="sidebar">
             <p>TEAM</p>
-            <a href="index.php" class="closebtn" onclick="closeNav1()"
+            <a href="teams.php" class="closebtn" onclick="closeNav1()"
               >×</a
             >
             <div class="wideTeam">
@@ -60,7 +60,7 @@
 							<h4><?php echo $pizza['title']; ?></h4>
 							<h4>Created by <?php echo $pizza['email']; ?></h4>
 							<h4><?php echo date($pizza['created_at']); ?></h4>
-							<h5>Ingredients:</h5>
+							<h5>Members:</h5>
 							<h4><?php echo $pizza['ingredients']; ?></h4>
 							
 							<!-- DELETE FORM -->
