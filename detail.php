@@ -1,5 +1,5 @@
 <?php 
-    include('db_connection.php');
+	include('db_connection.php');
     
     if(isset($_POST['delete'])){
 		$id_to_delete = mysqli_real_escape_string($conn, $_POST['id_to_delete']);
@@ -29,29 +29,56 @@
 
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Odense Paintball - tablet</title>
+		<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+  	</head>
+	<body>
 
-	<?php ?>
+		<div id="mySidebar3" class="sidebar">
+            <p>TEAM</p>
+            <a href="index.php" class="closebtn" onclick="closeNav1()"
+              >×</a
+            >
+            <div class="wideTeam">
+				
+			</div>
+            <div class="wideAlive">
+				<?php ?>
 
-	<div class="container center">
-		<?php if($pizza): ?>
-			<h4><?php echo $pizza['title']; ?></h4>
-			<p>Created by <?php echo $pizza['email']; ?></p>
-			<p><?php echo date($pizza['created_at']); ?></p>
-			<h5>Ingredients:</h5>
-            <p><?php echo $pizza['ingredients']; ?></p>
-            
-            <!-- DELETE FORM -->
-			<form action="detail.php" method="POST">
-				<input type="hidden" name="id_to_delete" value="<?php echo $pizza['id']; ?>">
-				<input type="submit" name="delete" value="Delete" class="btn brand z-depth-0">
-            </form>
-            
+					<div class="container center">
+						<?php if($pizza): ?>
+							<h4><?php echo $pizza['title']; ?></h4>
+							<h4>Created by <?php echo $pizza['email']; ?></h4>
+							<h4><?php echo date($pizza['created_at']); ?></h4>
+							<h5>Ingredients:</h5>
+							<h4><?php echo $pizza['ingredients']; ?></h4>
+							
+							<!-- DELETE FORM -->
+							<form action="detail.php" method="POST">
+								<input type="hidden" name="id_to_delete" value="<?php echo $pizza['id']; ?>">
+								<input type="submit" name="delete" value="Delete" class="btn brand z-depth-0">
+							</form>
+							
 
-		<?php else: ?>
-			<h5>No such pizza exists.</h5>
-        <?php endif ?>
-	</div>
+						<?php else: ?>
+							<h5>No such pizza exists.</h5>
+						<?php endif ?>
+					</div>
 
-	<?php ?>
+				<?php ?>
+            </div>
+		  </div>
+	</body>
+	
 
 </html>

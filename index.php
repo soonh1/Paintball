@@ -138,15 +138,15 @@
           </div>
 
            <!--Mappen som kommer frem fra bund til top-->
-        <div id="mySidebar2" class="sidebar">
-            <p>KEY</p>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
-              >×</a
-            >
-            <div class="wideMap" id="mapImg"></div>
-            <div class="wideMapEvent">
-            </div>
-          </div>
+        	<div id="mySidebar2" class="sidebar">
+				<p>KEY</p>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
+				>×</a
+				>
+				<div class="wideMap" id="mapImg"></div>
+				<div class="wideMapEvent">
+				</div>
+          	</div>
       </div>
 	</div>
 	<script src="script/javascript.js"></script>
