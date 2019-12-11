@@ -40,7 +40,7 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 		crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/style1.css" type="text/css" />
   	</head>
 	<body>
 
@@ -55,18 +55,21 @@
             <div class="wideAlive">
 				<?php ?>
 
-					<div class="container center">
+					<div class="container center" id="detailBox">
 						<?php if($pizza): ?>
-							<h4><?php echo $pizza['title']; ?></h4>
-							<h4>Created by <?php echo $pizza['email']; ?></h4>
-							<h4><?php echo date($pizza['created_at']); ?></h4>
-							<h5>Members:</h5>
-							<h4><?php echo $pizza['ingredients']; ?></h4>
+							<h4 class="detailTitle"><?php echo $pizza['title']; ?></h4>
+							<h5 class="detailInfo" id="detail1">Members:</h5>
+							<h4 class="detailInfo"><?php echo $pizza['ingredients']; ?></h4>
+							<h5 class="detailInfo" id="detail1">Created by:</h5>
+							<h4 class="detailInfo"><?php echo $pizza['email']; ?></h4>
+							<h5 class="detailInfo" id="detail1">Date:</h5>
+							<h4 class="detailInfo"><?php echo date($pizza['created_at']); ?></h4>
+							
 							
 							<!-- DELETE FORM -->
 							<form action="detail.php" method="POST">
 								<input type="hidden" name="id_to_delete" value="<?php echo $pizza['id']; ?>">
-								<input type="submit" name="delete" value="Delete" class="btn brand z-depth-0">
+								<input type="submit" name="delete" value="Delete" class="btn brand z-depth-0" id="btnDelete">
 							</form>
 							
 

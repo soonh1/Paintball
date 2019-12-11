@@ -35,7 +35,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
 	/>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/style1.css" type="text/css" />
   </head>
   <body>
         <!--Mappen som kommer frem fra top til bund-->
@@ -49,16 +49,16 @@
 					<div class="row" id="row1">
             <?php ?>
 
-              <section class="container grey-text">
-                <h4 class="center" id="test199">Add a Team</h4>
+              <section class="container grey-text" id="formbox">
+                <h4 class="center" id="formTitle">Add a Team</h4>
                 <form class="white" action="teams.php" method="POST">
-                  <label>Your Email</label>
+                  <label class="formText">Email</label>
                   <input type="text" name="email" value="<?php echo htmlspecialchars($email) ?>">
                   <div class="red-text"><?php echo $errors['email']; ?></div>
-                  <label>Team name</label>
+                  <label class="formText">Team name</label>
                   <input type="text" name="title" value="<?php echo htmlspecialchars($title) ?>">
                   <div class="red-text"><?php echo $errors['title']; ?></div>
-                  <label>Members (comma separated)</label>
+                  <label class="formText">Members (comma separated)</label>
                   <input type="text" name="ingredients" value="<?php echo htmlspecialchars($ingredients) ?>">
                   <div class="red-text"><?php echo $errors['ingredients']; ?></div>
                   <div class="center">
