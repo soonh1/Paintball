@@ -40,7 +40,7 @@
   <body>
         <!--Mappen som kommer frem fra top til bund-->
         <div id="mySidebar3" class="sidebar">
-            <p>TEAMS</p>
+            <p>TEAMS - INSTRUKTOR</p>
             <a href="instruktor.php" class="closebtn" onclick="closeNav1()"
               >×</a
             >
@@ -50,7 +50,7 @@
             <?php ?>
 
               <section class="container grey-text">
-                <h4 class="center">Add a Pizza</h4>
+                <h4 class="center" id="test199">Add a Team</h4>
                 <form class="white" action="teams.php" method="POST">
                   <label>Your Email</label>
                   <input type="text" name="email" value="<?php echo htmlspecialchars($email) ?>">

@@ -57,7 +57,7 @@
         </div>
         <div class="col" id="main">
           <div class="titleBar">
-            INSTRUKTOR - MAP
+            MAP - INSTRUKTOR
           </div>
           <div id="mapImg" onclick="openNav()"></div>
         </div>
