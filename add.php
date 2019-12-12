@@ -17,20 +17,20 @@
 		}
 		// check title
 		if(empty($_POST['title'])){
-			$errors['title'] = 'A title is required';
+			$errors['title'] = 'A team is required';
 		} else{
 			$title = $_POST['title'];
 			if(!preg_match('/^[a-zA-Z\s]+$/', $title)){
-				$errors['title'] = 'Title must be letters and spaces only';
+				$errors['title'] = 'Team name must be letters and spaces only';
 			}
 		}
 		// check ingredients
 		if(empty($_POST['ingredients'])){
-			$errors['ingredients'] = 'At least one ingredient is required';
+			$errors['ingredients'] = 'At least one member is required';
 		} else{
 			$ingredients = $_POST['ingredients'];
 			if(!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)){
-				$errors['ingredients'] = 'Ingredients must be a comma separated list';
+				$errors['ingredients'] = 'Members must be a comma separated list';
 			}
 		}
 		if(array_filter($errors)){
