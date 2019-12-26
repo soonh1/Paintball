@@ -33,7 +33,11 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
 	/>
-	<link rel="stylesheet" href="css/style1.css" type="text/css" />
+  <link rel="stylesheet" href="css/style1.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="forbedringer/fstyle.css" type="text/css">
+    
   </head>
   <body>
     <div class="container">
@@ -133,13 +137,28 @@
 				<p>KEY</p>
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
 				>×</a
-				>
-				<div class="wideMap" id="mapImg"></div>
-				<div class="wideMapEvent">
-				</div>
+        >
+        <div class="wideMapEvent"></div>
+				<div class="wideMap" style="background-color: white;">
+              <!-- SPILLET -->
+              <div class="game-container" id="gamePlay" style="display: none;">
+              <button id="restartGameButton"><i class="fas fa-sync-alt"></i></button>
+              <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+              </div>
+              <div id="test"></div>
+              <div>
+                <span id="score" class="animated">0</span>
+              </div>
+              <!-- <i class="fas fa-arrow-circle-right arrow"></i> -->
+            </div>
+            <div class="wrapper"><input type="button" id="playButton" name="answer" value="Play" onclick="showDiv()" /></div>
+              </div>
+				
           	</div>
       </div>
 	</div>
-	<script src="script/javascript.js"></script>
+  <script src="script/javascript.js"></script>
+  <script src="forbedringer/fgame.js"></script>
   </body>
 </html>

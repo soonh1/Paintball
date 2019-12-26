@@ -176,6 +176,7 @@ function progressBarFrame() {
 // Play Button
 function showDiv() {
   document.getElementById('gamePlay').style.display = "block";
+  document.getElementById('playButton').style.display = "none";
 }
 
 playButton.addEventListener("click", restartGame);

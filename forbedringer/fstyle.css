@@ -11,8 +11,6 @@ body {
   color: #333;
 }
 .game-container {
-  width: 100vw;
-  height: 100vh;
   text-align: center;
   padding: 20px;
 }
@@ -107,9 +105,7 @@ body {
 
 /* Restart Game Button */
 #restartGameButton {
-  position: absolute;
-  top: 6px;
-  right: 20px;
+  float: right;
   font-size: 16px;
   background-color: #ccc;
   color: #fff;
@@ -137,10 +133,13 @@ body {
     right: 8px;
     font-size: 14px;
   }
+  #playButton{
+    margin-top: 10%;
+  }
 }
 
 #playButton{
-  margin-top: 150%;
+  margin-top: 120%;
   width: 200px;
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
