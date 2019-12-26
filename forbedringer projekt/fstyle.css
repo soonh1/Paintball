@@ -138,3 +138,27 @@ body {
     font-size: 14px;
   }
 }
+
+#playButton{
+  margin-top: 150%;
+  width: 200px;
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+  padding: 50px 0;
+  border-radius: 50%;
+  border-style: none;
+  text-decoration: none;
+  background-color: #37A2EB;
+}
+
+.wrapper{
+  width: 200px;
+  margin: 0 auto;
+}

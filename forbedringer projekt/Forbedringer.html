@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fstyle.css" type="text/css">
 </head>
 <body>
-    <div class="game-container">
+    <div class="game-container" id="gamePlay" style="display: none;">
         <button id="restartGameButton"><i class="fas fa-sync-alt"></i></button>
         <div id="progress-bar-container">
           <div id="progress-bar"></div>
@@ -19,6 +19,8 @@
         <p><span id="score" class="animated">0</span></p>
         <!-- <i class="fas fa-arrow-circle-right arrow"></i> -->
       </div>
+      <div class="wrapper"><input type="button" id="playButton" name="answer" value="Play" onclick="showDiv()" /></div>
+      
       <script src="fgame.js"></script>
 </body>
 </html>

@@ -1,8 +1,10 @@
 // Global Variables
+// https://codepen.io/Coding_Journey 
 
 const gameContainer = document.querySelector(".game-container");
 const scoreElement = document.querySelector("#score");
 const restartGameButton = document.querySelector("#restartGameButton");
+const playButton = document.querySelector("#playButton");
 
 const directions = ["up", "right", "down", "left"];
 
@@ -140,7 +142,7 @@ function getRandomInt(max) { // Returns a random Integer in the range 0,...,max-
 
 // Progress Bar Countdown Timer
 const progressBarElement = document.querySelector("#progress-bar");
-const gameDuration = 3; // Game Duration in seconds
+const gameDuration = 10; // Game Duration in seconds
 let progressBarWidthNumerator = gameDuration*1000;
 const progressBarWidthDenominator = gameDuration*1000;
 let progressBarInterval = setInterval(progressBarFrame, 10);
@@ -170,3 +172,10 @@ function progressBarFrame() {
     }
   }
 }
+
+// Play Button
+function showDiv() {
+  document.getElementById('gamePlay').style.display = "block";
+}
+
+playButton.addEventListener("click", restartGame);
