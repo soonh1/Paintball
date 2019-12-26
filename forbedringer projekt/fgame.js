@@ -56,6 +56,7 @@ function restartGame() {
   gameContainer.addEventListener("touchend", release);
   startX = 0; startY = 0; endX = 0; endY = 0;
   progressBarInterval = setInterval(progressBarFrame, 10);
+  document.getElementById("test").innerHTML = "";
 }
 
 // Auxiliary Functions
@@ -139,7 +140,7 @@ function getRandomInt(max) { // Returns a random Integer in the range 0,...,max-
 
 // Progress Bar Countdown Timer
 const progressBarElement = document.querySelector("#progress-bar");
-const gameDuration = 30; // Game Duration in seconds
+const gameDuration = 3; // Game Duration in seconds
 let progressBarWidthNumerator = gameDuration*1000;
 const progressBarWidthDenominator = gameDuration*1000;
 let progressBarInterval = setInterval(progressBarFrame, 10);
@@ -152,6 +153,7 @@ function progressBarFrame() {
     gameContainer.removeEventListener("mouseup", release);
     gameContainer.removeEventListener("touchend", release);    
     progressBarElement.setAttribute("style", "width: 0%; background-color: #00cc99;");
+    document.getElementById("test").innerHTML = "Game over";
   }
   else {
     progressBarWidthNumerator-=10;
