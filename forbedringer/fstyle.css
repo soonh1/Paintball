@@ -11,6 +11,7 @@ body {
   color: #333;
 }
 .game-container {
+  height: 85vh;
   text-align: center;
   padding: 20px;
 }
