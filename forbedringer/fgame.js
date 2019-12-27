@@ -142,7 +142,7 @@ function getRandomInt(max) { // Returns a random Integer in the range 0,...,max-
 
 // Progress Bar Countdown Timer
 const progressBarElement = document.querySelector("#progress-bar");
-const gameDuration = 10; // Game Duration in seconds
+const gameDuration = 12; // Game Duration in seconds
 let progressBarWidthNumerator = gameDuration*1000;
 const progressBarWidthDenominator = gameDuration*1000;
 let progressBarInterval = setInterval(progressBarFrame, 10);
@@ -156,6 +156,7 @@ function progressBarFrame() {
     gameContainer.removeEventListener("touchend", release);    
     progressBarElement.setAttribute("style", "width: 0%; background-color: #00cc99;");
     document.getElementById("test").innerHTML = "Game over";
+    document.getElementById("scoreBox").innerHTML = score;
   }
   else {
     progressBarWidthNumerator-=10;

@@ -168,6 +168,55 @@ width: 30%;
 border: 20px solid white;
 }
 
+#wideKeyWhite{
+    background-color: white;
+}
+
+.wideMapEboxtext{
+    background-color: #3F3838;
+    height: 8%;
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
+.wideMapEboxtext h4{
+    padding: 4%;
+    font-weight: bold;
+}
+
+.wideMapEbox1{
+    background-color: #384d57;
+    height: 37%;
+    margin-bottom: 20px;
+}
+
+.wideMapEbox1 h4{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    color: white;
+    padding: 5%;
+}
+
+.wideMapEbox2{
+    background-color: #384d57;
+    height: 37%;
+}
+
+.wideMapEbox2 h4{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    color: white;
+    padding: 5%;
+}
+
+#scoreBox{
+    text-align: center;
+    font-size: 70px;
+}
+
+
 .wideTeam {
 background-color: #384d57;
 margin: 80px 0 0px 0;

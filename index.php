@@ -138,7 +138,15 @@
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
 				>×</a
         >
-        <div class="wideMapEvent"></div>
+        <div class="wideMapEvent" id="wideKeyWhite">
+          <div class="wideMapEboxtext"><h4>The Right Swipe</h4></div>
+          <div class="wideMapEbox1"><h4>The game is simple. Just swipe the following direction when the arrow is <i style="color: #37A2EB;">blue</i> and the opposite when it's <i style="color: #FF6484;">red</i>.  </h4></div>
+          <div class="wideMapEboxtext"><h4>Score</h4></div>
+          <div class="wideMapEbox2">
+          <h4>You need atleast 150 points to unlock the crate.</h4>
+            <div id="scoreBox" style="color: white;">0</div>
+          </div>
+        </div>
 				<div class="wideMap" style="background-color: white;">
               <!-- SPILLET -->
               <div class="game-container" id="gamePlay" style="display: none;">
